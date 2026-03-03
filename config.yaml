@@ -1,0 +1,7 @@
+source:
+  type: filesystem
+  params:
+    path: "./sample_tests"
+
+model:
+  threshold: 0.7
