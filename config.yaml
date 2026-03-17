@@ -5,3 +5,15 @@ source:
 
 model:
   threshold: 0.7
+
+# Bug system integration (optional)
+# Set type to "none" to disable, or a registered type e.g. "jira", "bugzilla", "github"
+bugsystem:
+  type: "none"
+  params: {}
+  # Future example for Jira:
+  # type: "jira"
+  # params:
+  #   url: "https://your-org.atlassian.net"
+  #   project_key: "QA"
+  #   api_token: "your-token"

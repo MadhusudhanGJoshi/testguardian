@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 
-MODEL_PATH = "models/test_model.pkl"
+MODEL_PATH = "models/testguardian_model.pkl"
 
 def retrain_model():
 
