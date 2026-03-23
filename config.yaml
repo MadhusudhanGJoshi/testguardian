@@ -2,12 +2,27 @@ source:
   type: filesystem
   params:
     path: "./sample_tests"
+    filter: ".py"
 
 model:
   threshold: 0.7
 
+# Execution history (optional)
+# Point to a directory of previous run reports OR a single report file.
+# Supported formats: JUnit XML, Robot Framework output.xml, MTR .result/.summary, CSV
+# Leave path empty to skip history-based features.
+history:
+  path: "data/reports/pytest/"
+  # Directory of multiple run reports (recommended):
+  # path: "data/reports/"
+  #
+  # Single report file:
+  # path: "data/reports/run_01.xml"
+  # path: "data/reports/output.xml"
+  # path: "data/reports/suite.result"
+  # path: "data/execution_history.csv"
+
 # Bug system integration (optional)
-# Set type to "none" to disable, or a registered type e.g. "jira", "bugzilla", "github"
 bugsystem:
   type: "none"
   params: {}

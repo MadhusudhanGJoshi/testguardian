@@ -1,7 +1,10 @@
+# Remove 'data/' from .gitignore and replace with specific exclusions
+cat > .gitignore << 'EOF'
 venv/
 __pycache__/
 *.pyc
-models/
-data/
+models/*.pkl
+data/expert_feedback.json
 .ipynb_checkpoints/
 .DS_Store
+EOF

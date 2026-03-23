@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pytest_run_01" tests="5" failures="1" errors="0">
+  <testcase classname="tests" name="test_login.py" time="0.5"/>
+  <testcase classname="tests" name="test_legacy_feature.py" time="0.3">
+    <failure type="AssertionError">Expected True but got False</failure>
+  </testcase>
+  <testcase classname="tests" name="test_user_checkout.py" time="0.8"/>
+  <testcase classname="tests" name="test_db_connection.py" time="1.1"/>
+  <testcase classname="tests" name="test_innodb_basic.py" time="0.6"/>
+</testsuite>
